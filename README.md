@@ -21,16 +21,18 @@ Climate rasters (temperature, precipitation, elevation) are stored under `data/r
 - No manual tweaking or GUI interactions required.
 
 ---
-**Key R Packages**
-tidyverse    # Data manipulation and ggplot2  
-sf           # Vector GIS operations  
-raster       # Raster data handling  
-sp           # SpatialPoints and legacy spatial support  
-brms         # Bayesian GAMMs via Stan  
-bayesplot    # MCMC diagnostics and plotting  
-tidybayes    # Posterior draw operations  
-patchwork    # Multi-panel plot layouts  
-RColorBrewer # Color palettes  
-here         # Project-root file paths  
+## 📦 *Key R Packages*
+
+- *tidyverse*: Data manipulation and ggplot2  
+- *sf*: Vector GIS operations  
+- *raster*: Raster data handling  
+- *sp*: SpatialPoints and legacy spatial support  
+- *brms*: Bayesian GAMMs via Stan  
+- *bayesplot*: MCMC diagnostics and plotting  
+- *tidybayes*: Posterior draw operations  
+- *patchwork*: Multi-panel plot layouts  
+- *RColorBrewer*: Color palettes  
+- *here*: Project-root file paths  
+
 
 
