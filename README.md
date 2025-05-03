@@ -11,7 +11,7 @@ The primary dataset, `data/modern_multiple_groups.csv`, contains group-level mea
 - **Anthropometric Measures**: Group mean stature, body mass, and sitting height from individuals aged 18 and above. 
 
 ### 🌍 Climate Data
-Climate rasters (temperature, precipitation, elevation) are stored under `data/raw/worldclim/` and sourced from WorldClim v2.1:  
+Climate rasters (temperature, precipitation, altitude) are ourced from WorldClim v2.1:  
 > Fick, S. E. & Hijmans, R. J. (2017). *WorldClim 2: new 1-km spatial resolution climate surfaces for global land areas.* International Journal of Climatology, 37(12), 4302–4315. DOI: 10.1002/joc.5086
 
 ---
