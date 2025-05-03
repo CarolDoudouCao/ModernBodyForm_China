@@ -568,7 +568,7 @@ cat("Coordinate-only prediction complete!\n")
 ### Visual full-Early Rural
 ```{r}
 # Read the predicted male stature CSV (with z-scored predictions)
-extended_grid_male_stature <- read.csv(here("output", "final_male_stature_predictions_20chunks_z_with_coordinates_early_rural.csv"))
+extended_grid_male_stature <- read.csv(here("output", "final_male_stature_predictions_20chunks_z_early_rural.csv"))
 
 # Average the z-scored predictions across all Time and Urbanism to capture overall spatial trends
 spatial_trends_male_stature <- extended_grid_male_stature %>%
