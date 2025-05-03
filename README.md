@@ -2,7 +2,7 @@
 Code and models for analysing spatial variation in human body form across modern China using georeferenced anthropometric data and Bayesian GAMMs. Explores ecological, historical, and sociocultural drivers of variation in stature, body mass, and body proportions.
 
 ## 📂 Data Description
-The primary dataset, `data/raw/modern_multiple_groups.csv`, contains group-level means compiled from published literature.
+The primary dataset, `data/modern_multiple_groups.csv`, contains group-level means compiled from published literature.
 - **Sample Size**: 91,683 adults (46,885 males, 44,798 females) from 213 groups
 
 - **Time Periods**:  
@@ -13,6 +13,18 @@ The primary dataset, `data/raw/modern_multiple_groups.csv`, contains group-level
 ### 🌍 Climate Data
 Climate rasters (temperature, precipitation, elevation) are stored under `data/raw/worldclim/` and sourced from WorldClim v2.1:  
 > Fick, S. E. & Hijmans, R. J. (2017). *WorldClim 2: new 1-km spatial resolution climate surfaces for global land areas.* International Journal of Climatology, 37(12), 4302–4315. DOI: 10.1002/joc.5086
+
+---
+## 🔁 Workflow (male‐stature example)
+
+All steps of the male-stature analysis are wrapped into a single script (`scripts/01_male_stature_example.Rmd`):
+
+1. **Data loading & cleaning**  
+2. **Climate raster extraction**  
+3. **Scaling & model fitting** (using `brms`)  
+4. **Posterior extraction & conditional effects**  
+5. **Spatial prediction & mapping**
+6. **Conditional effects for individual predictor**
 
 ---
 ## 🔁 Reproducibility
