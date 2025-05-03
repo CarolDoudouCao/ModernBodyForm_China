@@ -2,8 +2,7 @@
 Code and models for analysing spatial variation in human body form across modern China using georeferenced anthropometric data and Bayesian GAMMs. Explores ecological, historical, and sociocultural drivers of variation in stature, body mass, and body proportions.
 
 ## Data Description
-The primary dataset (`modern_multiple_groups.csv`) includes group-level anthropometric and geographic information drawn from reported literatures. The compiled dataset is stored in 'data' folder in current repository
-- **Scope**: Published anthropometric data on modern Chinese populations (mid-20th to early 21st century).  
+The primary dataset, `data/raw/modern_multiple_groups.csv`, contains group-level means compiled from published literature.
 - **Sample Size**: 91,683 adults (46,885 males, 44,798 females) from 213 groups
 
 - **Time Periods**:  
@@ -11,15 +10,17 @@ The primary dataset (`modern_multiple_groups.csv`) includes group-level anthropo
   - **Early 21st century** (post-2000): Represents individuals benefiting from improved healthcare, urbanization, and living standards after China's 1978 economic reforms.  
 - **Anthropometric Measures**: Group mean stature, body mass, and sitting height from individuals aged 18 and above. 
 
-Climate rasters are from [WorldClim v2.1](https://www.worldclim.org/data/worldclim21.html)
-Fick, S. E., & Hijmans, R. J. (2017). WorldClim 2: new 1-km spatial resolution climate surfaces for global land areas. International Journal of Climatology, 37(12), 4302-4315. https://doi.org/https://doi.org/10.1002/joc.5086 
+### 🌍 Climate Data
+Climate rasters (temperature, precipitation, elevation) are stored under `data/raw/worldclim/` and sourced from WorldClim v2.1:  
+> Fick, S. E. & Hijmans, R. J. (2017). *WorldClim 2: new 1-km spatial resolution climate surfaces for global land areas.* International Journal of Climatology, 37(12), 4302–4315. DOI: 10.1002/joc.5086
 
+---
 ## Reproducibility
 - All analyses are conducted in **R ≥ 4.2.0**.
 - Model priors, formulas, MCMC settings, and plotting themes are specified in full within the scripts.
 - No manual tweaking or GUI interactions required.
 
-**Below are attached packages:**
+**Key R Packages**
   "tidyverse",     # dplyr, tidyr, ggplot2, stringr, etc.
   "sf",            # st_read, st_transform, geom_sf, as_Spatial
   "raster",        # raster(), extract(), mask(), rasterFromXYZ()
